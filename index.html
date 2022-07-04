@@ -63,8 +63,8 @@
 
     /* photo */
     .innerBanner {
-        width: 100%;
-        height: 350px;
+        max-width: 100%;
+        min-height: 350px;
         background: #ddd url("images/Tech image 4.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -372,7 +372,7 @@
         text-align: center;
     }
 
-    @media (max-width:100%) {
+    @media (max-width:991px) {
         .footer-dark .item.social {
             text-align: center;
             margin-top: 20px;
@@ -404,20 +404,6 @@
         font-size: 13px;
         margin-bottom: 0;
     }
-
-
-    /* mobile set */
-    @media(max-width:500px){
-       aaa ul{
-        background-color: darkblue;
-        width: 100%;
-        position: absolute;
-        top:75px;
-        right:0;
-        background-size: cover;
-        z-index: 2;
-       }
-    }
     </style>
 </head>
 
@@ -429,6 +415,8 @@
                 <img alt="Qries" src="	https://www.ongcindia.com/documents/77751/2132071/ongcLogo.jpg" width="62"
                     hight="61">
                 <span class=" fst-italic text-light">Oil and Natural Gas Corporation Limited</span>
+
+
             </a>
 
             <!--<a class="navbar-brand fs-2 fst-italic fw-bolder" href="dashbord.php">ONGC</a> -->
@@ -444,31 +432,30 @@
             </ul>
         </div>
 
-        <div class="container-fluid  p-3 aaa">
-            <ul class="nav justify-content-center container-fluid">
-                <li class="nav-item font-monospace "><a href="Documents\1. About Tech meet 2022.pdf" class="button-75 ms-5 link-light column" role="button">About</a></li>
-                <li class="nav-item font-monospace ms-5"><a href="Documents\2. Schedule - Technology Meet-2022.pdf" class="button-75  ms--1column link-light" role="button">Schedule</a></li>
-                <li class="nav-item font-monospace ms-5"><a href="#" class="button-75  link-light column" role="button">Tech session details</a></li>
-                <li class="nav-item font-monospace ms-5"><a href="Documents\4. Location Details.pdf " class="button-75 link-light ccolumn" role="button">Location</a></li>
-                <li class="nav-item font-monospace ms-5"><a href="Documents\5. Contact Details.pdf" class="button-75 link-light column" role="button">Contact details</a></li>
-                <li class="nav-item font-monospace ms-5"><a href="Documents\Schedule - Technology Meet-2022.docx" class="button-75 me-5 link-light column" role="button">Download</a></li>
-            </ul>   
+        <div class="container-fluid flex-parent jc-center p-3 aaa">
+            <a href="Documents\1. About Tech meet 2022.pdf" class="button-75 ms-5 link-light column" role="button">About</a>
+            <a href="Documents\2. Schedule - Technology Meet-2022.pdf" class="button-75  ms--1column link-light" role="button">Schedule</a>
+            <a href="#" class="button-75  link-light column" role="button">Tech session details</a>
+            <a href="Documents\4. Location Details.pdf " class="button-75 link-light ccolumn" role="button">Location</a>
+            <a href="Documents\5. Contact Details.pdf" class="button-75 link-light column" role="button">Contact details</a>
+            <a href="Documents\Schedule - Technology Meet-2022.docx" class="button-75 me-5 link-light column" role="button">Download</a>
         </div>
     </nav>
 
     <!-- picture -->
     <div class="innerBanner">
-            <!-- <h1 class="first-txt">&nbsp &nbsp &nbsp &nbsp &nbsp Tech Meet   2022
-                <br>&nbsp &nbsp &nbsp Shillong , Meghalaya<br>On shore Engineering Services</h1> -->
+            <h1 class="first-txt">&nbsp &nbsp &nbsp &nbsp &nbsp Tech Meet   2022
+                <br>&nbsp &nbsp &nbsp Shillong , Meghalaya<br>On shore Engineering Services</h1>
     </div>
 
     <!-- card -->
     <section class="content demo">
         <div class="card-hghlght demo-card  text-light"> 
-            <h3 class="text-center mt-5 text-danger item text" ><u>Upcoming Events</u></h3>
-            <h3 class="ml-5 mt-4 item text">-->Inauguration by Director<br>&nbsp &nbsp &nbsp On 07.07.2022 - 16:30Hs</h3>
-            <h3 class="ml-5 item text">-->Inauguration Link &nbsp &nbsp &nbsp &nbsp &nbsp <br>&nbsp &nbsp &nbsp 
-                <a class=" text-light item text" href="videos\Inaugration_R1.mp4">Click Here to Launch</h3>
+            <h1 class="text-center mt-5 text-danger" ><u>Upcoming Events</u></h1	>
+            <h1 class="ml-5 mt-4">-->Inauguration by Director<br>&nbsp &nbsp &nbsp On 07.07.2022 - 16:30Hs</h1><br>
+            <h1 class="ml-5">-->Inauguration Link &nbsp 
+                <a class=" text-light" href="videos\Inaugration_R1.mp4">(Click Here to Launch)</h1>
+
         </div>
     </section>
     
@@ -525,15 +512,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-        $(function () {
-          var nua = navigator.userAgent
-          var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
-          if (isAndroid) {
-            $('select.form-control').removeClass('form-control').css('width', '100%')
-          }
-        })
-        </script>
 
 
 </body>
